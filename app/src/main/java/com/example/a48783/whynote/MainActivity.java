@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void logIn(View view)
     {
-       // Intent intent = new Intent(this, Menu.class);
-       // startActivity(intent);
+        Intent intent = new Intent(this, Menu.class);
+        startActivity(intent);
     }
 }
