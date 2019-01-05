@@ -16,18 +16,18 @@ public class Menu extends AppCompatActivity {
 
     public void lastNotes(View view)
     {
-       // Intent intent = new Intent(this, LastNotes.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, LastNotes.class);
+        startActivity(intent);
     }
     public void callendar(View view)
     {
-       // Intent intent = new Intent(this, Callendar.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Callendar.class);
+        startActivity(intent);
     }
     public void subjects(View view)
     {
-        //Intent intent = new Intent(this, Subjects.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Subjects.class);
+        startActivity(intent);
     }
     public void newNote(View view)
     {

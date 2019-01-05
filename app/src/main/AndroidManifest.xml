@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".Menu" />
         <activity android:name=".NewNote" />
-        <activity android:name=".Subjects"></activity>
+        <activity android:name=".Subjects" />
+        <activity android:name=".Callendar" />
+        <activity android:name=".LastNotes"></activity>
     </application>
 
 </manifest>
