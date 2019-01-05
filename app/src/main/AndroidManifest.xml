@@ -20,7 +20,8 @@
         <activity android:name=".NewNote" />
         <activity android:name=".Subjects" />
         <activity android:name=".Callendar" />
-        <activity android:name=".LastNotes"></activity>
+        <activity android:name=".LastNotes" />
+        <activity android:name=".Note"></activity>
     </application>
 
 </manifest>

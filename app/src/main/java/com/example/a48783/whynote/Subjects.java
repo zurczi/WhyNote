@@ -14,16 +14,17 @@ import java.util.Arrays;
 public class Subjects extends AppCompatActivity {
     private ListView list ;
     private ArrayAdapter<String> adapter ;
+    String subjects[] = {"PR","PTC","PIT","MP","PMD"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subjects);
         list = (ListView) findViewById(R.id.subjects);
 
-        String cars[] = {"PR","PTC","PIT","MP","PMD"};
+
 
         ArrayList<String> carL = new ArrayList<String>();
-        carL.addAll( Arrays.asList(cars) );
+        carL.addAll( Arrays.asList(subjects) );
 
         adapter = new ArrayAdapter<String>(this, R.layout.list_view_row, carL);
 
@@ -31,14 +32,15 @@ public class Subjects extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                showNotes(view);
+                showNotes(view,i);
             }
         });
 
     }
-    public void showNotes(View view)
+    public void showNotes(View view,int i)
     {
-        Intent intent = new Intent(this, NewNote.class);
+        Intent intent = new Intent(this, LastNotes.class);
+        intent.putExtra("subject",subjects[i] );
         startActivity(intent);
     }
 
