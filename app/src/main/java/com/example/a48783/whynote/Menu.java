@@ -31,7 +31,7 @@ public class Menu extends AppCompatActivity {
     }
     public void newNote(View view)
     {
-        //Intent intent = new Intent(this, NewNote.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, NewNote.class);
+        startActivity(intent);
     }
 }
