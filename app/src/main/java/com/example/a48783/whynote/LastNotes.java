@@ -47,10 +47,11 @@ public class LastNotes extends AppCompatActivity {
         });
 
     }
-    public void showNotes(View view)
+    public void showNotes(View view,int i )
     {
         Intent intent = new Intent(this, Note.class);
-        intent.putExtra("subject", );
+        intent.putExtra("subject", notes[i].split(" ")[0]);
+        intent.putExtra("note_name", notes[i]);
         startActivity(intent);
     }
 }
